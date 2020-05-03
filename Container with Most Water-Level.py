@@ -4,13 +4,7 @@ class Solution:
         l=len(height)
         for i in range(0,l):
             for j in range(i+1,l):
-                if (height[i]<=height[j]):
-                    h=j-i
-                    ar=height[i]*h
-                    area.append(ar)
-                elif(height[i]>height[j]):
-                    h=j-i
-                    ar=height[j]*h
+                    ar=min(height[i],height[j])*(j-i)
                     area.append(ar)
         return max(area)           
         
