@@ -8,4 +8,5 @@ class Solution:
             return(nums[n])
         else:
             n1=int(l/2).              #if its lenght is odd
-            return((nums[n1]+nums[n1-1])/2)#return the list
+            return((nums[n1]+nums[n1-1])/2)#return the median according to the formula
+
