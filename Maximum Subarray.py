@@ -5,4 +5,4 @@ class Solution:
         for i in range(1,len(nums)):
             r = max(nums[i],temp[i-1]+nums[i])                      #getting the sum value of evry subarrays
             temp.append(r)                                          #storing the sums in the temp list
-        return max(temp)                                            #returning the maximum value
+        return max(temp)                                            #returning the maximum value.
